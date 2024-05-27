@@ -2,12 +2,10 @@ package cl.picoctl;
 
 import cl.picoctl.config.AppCommands;
 import cl.picoctl.config.PicocliCompleter;
-import org.jline.reader.Highlighter;
 import org.jline.reader.LineReader;
 import org.jline.reader.LineReaderBuilder;
 import org.jline.terminal.Terminal;
 import org.jline.terminal.TerminalBuilder;
-import org.jline.utils.AttributedString;
 import org.jline.utils.AttributedStringBuilder;
 import org.jline.utils.AttributedStyle;
 import picocli.CommandLine;
@@ -39,7 +37,7 @@ public class App {
     private static String buildPrompt() {
         AttributedStringBuilder promptBuilder = new AttributedStringBuilder()
                 .style(AttributedStyle.DEFAULT.background(AttributedStyle.GREEN).foreground(AttributedStyle.BLACK))
-                .append(" mycli ")
+                .append(" my-cli ")
                 .style(AttributedStyle.DEFAULT.foreground(AttributedStyle.GREEN))
                 .append("\uE0B0 ");// 
 
